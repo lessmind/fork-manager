@@ -1,0 +1,20 @@
+# lines start with # will be ignore, blank line will be ignores, too
+
+# the <clone path>, this line should start with [path] as the first column,
+# and [clone path] as second where you wanna put the cloned repository, after initialized,
+# the repository will be put into <path>/repos/<clone path>
+path repositoryA
+# some remote repository defines, these should start with [remote] as the first column,
+# the [remote name] as second and it's [path] as third.
+# remote origin, which you probably have write access
+remote origin git@xxxxxx/
+# the fork source
+remote source git://xxxxxx/
+# maybe some another fork
+remote other git://xxxxxx/
+
+# and some more repository settings
+path repositoryB
+remote origin git@xxxxxx/
+remote source git://xxxxxx/
+remote other git://xxxxxx/
