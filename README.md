@@ -57,15 +57,11 @@ cd <path>
 cd <path>
 ./do fetch
 ```
-### Execute git command to each repository.
+### Execute command to each repository. (This will init the repositories automaticly if it's not initialized)
 ```sh
 cd <path>
 ./do git log -5 # show all recent 5 commits
 ./do git status # show all git status
-```
-### Execute external(everything but git) command to each repository.
-```sh
-cd <path>
-./do execute ls
+./do ls
 ./do touch README.md
 ```

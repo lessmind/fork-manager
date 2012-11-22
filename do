@@ -99,16 +99,8 @@ case ${1} in
 		_each "_initRepo"
 		_each "_fetchRepo"
     ;;
-	git)
+	**)
 		_each "_initRepo"
 		_eachPath "_exec" ${@:1}
 	;;
-	execute)
-		_each "_initRepo"
-		_eachPath "_exec" ${@:2}
-	;;
-    **)
-        echo "Usage: ${0} (init|fetch|git command|execute external command)" >&2
-        exit 1
-    ;;
 esac
